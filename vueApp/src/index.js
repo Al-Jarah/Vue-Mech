@@ -6,12 +6,21 @@ import Login form '@/components/Login'
 
 Vue.use(Rounter)
 
-export default new Route({
+export default new Router({
   routes: [
     {
-      path: '/'
+      path: '/hello'
       name: 'hello'
-      component: Login
-    }
+      component: Hello
+    },
+     path:'/login',
+     name: 'login'
+     component:Login
+    },
+    {
+      path: '/sign-up',
+      name: 'SignUp',
+      component: SignUp
+     }
   ]
-})           
+})       
